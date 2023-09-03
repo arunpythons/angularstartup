@@ -1,0 +1,42 @@
+<header class="pd">
+    <p>Anug Sun</p>
+</header>
+<div id="top-panel" class="pd d-flx jc-sbtwn">
+    <div class="logo d-flx ai-cntr">
+        <!-- <i class="fa-solid fa-sun fa-2x"></i> -->
+        <img src="favicon.ico" alt="" srcset="">
+        <a href="#">Sun Kiss</a>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="right-contents d-flx ai-cntr">
+        <div class="notification d-flx ai-cntr" (click)="openinbos()">
+            <div class="count d-flx">1</div>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="notification d-flx ai-cntr">
+            <div class="count d-flx">1</div>
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="user-information">
+            <div class="user d-flx ai-cntr">
+                <div class="user-photo">
+                    <img src="assets/user.png" alt="">
+                </div>
+                <div class="user-name d-flx ai-cntr">
+                    <span>Username </span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="user-drop p-2">
+                <ul>
+                    <li class="d-flx ai-cntr" *ngFor="let uditem of user_drop_list">
+                        <div class="{{uditem.udiv}}">
+                            <i class="{{uditem.icon}}"></i>
+                        </div>
+                        <span>{{uditem.name}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

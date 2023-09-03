@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li *ngFor="let sitem of side_panel_list">
+            <div class="{{sitem.side_iclass}}">
+                <i class="{{sitem.icon}}"></i>
+            </div>
+            <a href="#{{sitem.name}}">{{sitem.name}}</a>
+        </li>
+    </ul>
+</nav>

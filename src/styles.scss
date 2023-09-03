@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+.pd{
+    padding: 10px 30px;
+}
+.d-flx{
+    display: flex;
+}
+.jc-sbtwn{
+    justify-content: space-between;
+}
+.ai-cntr{
+    align-items: center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;                   
+}
+.side-panel{
+    width: 20%;
+}
+main{
+    width: 80%;
+}

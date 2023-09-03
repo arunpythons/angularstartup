@@ -1,0 +1,110 @@
+$color-blue: rgb(29, 125, 209);
+$color-shadow:rgb(240, 239, 239);
+$color-white:white;
+$color-black:black;
+header{
+    background-color: $color-blue;
+    color: $color-white;
+}
+#top-panel{
+    box-shadow: 0px 3px 3px $color-shadow;
+    .logo{
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+            margin: 0px 10px;
+            color: $color-black;
+        }
+    }
+    .right-contents{
+        gap: 0px 25px;
+        .notification{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            color: $color-shadow;
+            .count{
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                width: 15px;
+                height: 15px;
+                font-size: 10px;
+                padding: 1px;
+                background-color: red;
+                border-radius: 50%;
+                color: $color-white;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover{
+                background-color: $color-shadow;
+                color: $color-blue;
+            }
+        }
+        .user-information{
+            position: relative;
+            cursor: pointer;
+            .user{
+                gap: 0px 5px;
+                .user-photo{
+                    width: 30px;
+                    height: 30px;
+                    background-color: $color-blue;
+                    border-radius: 50%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .user-name{
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .user-drop{
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                width: 200px;
+                background-color: $color-white;
+                box-shadow:  0px 0px 5px $color-shadow;
+                border-radius: 10px;
+                ul{
+                    
+                    li{
+                        gap: 0px 10px;
+                        padding: 8px;
+                        cursor: pointer;
+                        color: $color-blue;
+                        -webkit-transition-duration: 0.5s;
+                        transition-duration: 0.5s;
+                        .usr-icon{
+                            width: 30px;
+                            height: 30px;  
+                            justify-content: center;                      
+                            background-color: $color-shadow;
+                            border-radius: 50%;
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            background-color: $color-shadow;
+                            border-radius: 10px;
+                            color: $color-black;   
+                        }
+                        &:hover .usr-icon{
+                            background-color: $color-blue;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
